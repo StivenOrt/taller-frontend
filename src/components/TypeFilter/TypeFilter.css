@@ -1,0 +1,21 @@
+.types-filter {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+  mask-image: linear-gradient(90deg, #000 92%, transparent);
+}
+
+.types-filter__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--type);
+  transition: background 0.2s, transform 0.3s var(--ease-spring);
+}
+
+.chip.is-active .types-filter__dot {
+  background: #fff;
+  transform: scale(1.2);
+}

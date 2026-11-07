@@ -1,0 +1,30 @@
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.load-more__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2.5px solid rgb(255 255 255 / 0.35);
+  border-top-color: #fff;
+  animation: spin 0.7s linear infinite;
+}
+
+.load-more__error {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--brand);
+  animation: fade-in 0.3s;
+}
+
+.load-more__retry {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+}

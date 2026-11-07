@@ -1,0 +1,30 @@
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fade-up 0.5s var(--ease-out) both;
+}
+
+.state p {
+  max-width: 420px;
+  margin-bottom: 10px;
+}
+
+.state__icon {
+  width: 72px;
+  height: 72px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.state--empty .state__icon {
+  animation: wobble 2.4s ease-in-out infinite;
+}
+
+.state--error .state__icon {
+  color: var(--brand);
+  animation: shake 0.6s 0.2s ease-in-out both;
+}

@@ -1,0 +1,39 @@
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border-bottom: 1px solid var(--border);
+}
+
+.toolbar__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fade-up 0.6s 0.1s var(--ease-out) both;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  animation: fade-in 0.4s both;
+}
+
+@media (max-width: 600px) {
+  .toolbar__inner,
+  .content {
+    padding-inline: 16px;
+  }
+}
